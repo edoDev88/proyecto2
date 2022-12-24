@@ -141,12 +141,17 @@ main ol {
 }
 
 /* ==== Formulario ==== */
-form {
+.formulario {
   padding: 15px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: left;
+}
+
+.datosPersonales {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 label,
@@ -159,6 +164,16 @@ input {
   margin-top: 15px;
 }
 
+@media (min-width: 768px) {
+  .formulario {
+    flex-flow: row wrap;
+    gap: 15px;
+  }
+
+  .boton-form {
+    display: block;
+  }
+}
 /* ---- Footer ---- */
 footer {
   background-color: rgba(206, 43, 55, 1);
