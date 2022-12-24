@@ -27,18 +27,22 @@ header {
   align-items: center;
 }
 
-header img {
-  max-width: 183px;
-}
-
 header nav ul {
   display: flex;
   flex-flow: column wrap;
   text-align: center;
 }
 
-.redes-sociales {
-  display: none;
+@media (min-width: 1200px) {
+  header {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    flex-flow: row wrap;
+    gap: 15px;
+  }
 }
 
 /* ---- Main ---- */
@@ -109,6 +113,16 @@ main .parrafo-nosotros {
   width: 100px;
   height: 25px;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .contenedorTarjetas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
 }
 
 /* ==== Risotto ==== */
