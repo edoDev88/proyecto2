@@ -1,0 +1,158 @@
+/* ---- Reseteo de CSS ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(245, 245, 245, 1);
+  font-weight: 500;
+}
+
+/* ---- Header ---- */
+header {
+  background-color: rgba(10, 130, 6, 1);
+  padding: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  max-width: 183px;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.redes-sociales {
+  display: none;
+}
+
+/* ---- Main ---- */
+/* ==== index ==== */
+main {
+  padding: 25px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+main .titulo-index {
+  max-width: 280px;
+  font-size: 45px;
+  text-align: center;
+}
+
+main .parrafo-index {
+  margin: 25px 0;
+  max-width: 280px;
+  text-align: center;
+}
+
+.button-index {
+  padding: 20px;
+  border-radius: 50px;
+  border: 0px solid black;
+}
+
+.pizza-index {
+  margin-top: 25px;
+}
+
+/* ==== Nosotros ==== */
+main .parrafo-nosotros {
+  margin: 25px 0;
+  max-width: 280px;
+  text-align: justify;
+}
+
+/* ==== Recetas ==== */
+.contenedorTarjetas {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.tarjeta {
+  width: 270px;
+  padding: 15px;
+  background-color: rgba(217, 217, 217, 1);
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.boton_tarjeta {
+  background-color: darkkhaki;
+  display: block;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+}
+
+/* ==== Risotto ==== */
+.receta-risotto {
+  margin: 25px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 15px;
+}
+main ul {
+  list-style: disc;
+}
+
+main ol {
+  list-style: decimal;
+}
+
+/* ==== Formulario ==== */
+form {
+  padding: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: left;
+}
+
+label,
+input {
+  display: block;
+  padding: 5px;
+}
+
+.boton-form {
+  margin-top: 15px;
+}
+
+/* ---- Footer ---- */
+footer {
+  background-color: rgba(206, 43, 55, 1);
+  text-align: center;
+  padding: 15px;
+}
+footer span {
+  display: block;
+  font-weight: 600;
+  color: rgba(245, 245, 245, 1);
+}
