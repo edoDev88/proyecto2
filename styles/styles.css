@@ -33,7 +33,7 @@ header nav ul {
   text-align: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768) {
   header {
     flex-flow: row wrap;
     justify-content: space-between;
@@ -115,7 +115,7 @@ main .parrafo-nosotros {
   text-align: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768) {
   .contenedorTarjetas {
     display: flex;
     flex-flow: row wrap;
