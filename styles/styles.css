@@ -94,6 +94,7 @@ header nav ul {
 
 @media (min-width: 768px) {
   .index-principal {
+    height: calc(100vh - 74px);
     flex-flow: row;
     gap: 150px;
   }
