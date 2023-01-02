@@ -222,3 +222,13 @@ footer span {
   font-weight: 600;
   color: rgba(245, 245, 245, 1);
 }
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+}
