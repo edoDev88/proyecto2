@@ -47,7 +47,7 @@ header nav ul {
 
 /* ---- Main ---- */
 /* ==== index ==== */
-main {
+.index-principal {
   padding: 25px;
   display: flex;
   flex-flow: column wrap;
@@ -56,26 +56,52 @@ main {
   gap: 15px;
 }
 
-main .titulo-index {
+.index-principal-texto {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.titulo-index {
   max-width: 280px;
   font-size: 45px;
   text-align: center;
 }
 
-main .parrafo-index {
+.parrafo-index {
   margin: 25px 0;
   max-width: 280px;
   text-align: center;
 }
 
-.button-index {
-  padding: 20px;
+.boton-index {
+  display: block;
+  background-color: antiquewhite;
+  color: black;
+  width: 200px;
+  height: 50px;
+  padding: 15px;
   border-radius: 50px;
   border: 0px solid black;
+  text-align: center;
 }
 
 .pizza-index {
   margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+  .index-principal {
+    flex-flow: row;
+    gap: 150px;
+  }
+
+  .titulo-index,
+  .parrafo-index {
+    max-width: 550px;
+  }
 }
 
 /* ==== Nosotros ==== */
