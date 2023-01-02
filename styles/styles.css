@@ -11,6 +11,12 @@ ul {
   list-style: none;
 }
 
+h1,
+h2 {
+  margin: 25px;
+  text-align: center;
+}
+
 a {
   text-decoration: none;
   color: rgba(245, 245, 245, 1);
@@ -56,6 +62,9 @@ header nav ul {
 }
 
 /* ---- Main ---- */
+main {
+  margin: 25px;
+}
 /* ==== index ==== */
 .index-principal {
   padding: 25px;
@@ -98,13 +107,8 @@ header nav ul {
   text-align: center;
 }
 
-.pizza-index {
-  margin-top: 25px;
-}
-
 @media (min-width: 768px) {
   .index-principal {
-    height: calc(100vh - 74px);
     flex-flow: row;
     gap: 150px;
   }
@@ -116,10 +120,24 @@ header nav ul {
 }
 
 /* ==== Nosotros ==== */
-main .parrafo-nosotros {
+.parrafo-nosotros {
   margin: 25px 0;
   max-width: 280px;
   text-align: justify;
+}
+
+.main-nosotros-principal {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+@media (min-width: 768px) {
+  .main-nosotros-principal {
+    flex-flow: row wrap;
+  }
 }
 
 /* ==== Recetas ==== */
@@ -135,7 +153,7 @@ main .parrafo-nosotros {
   width: 270px;
   padding: 15px;
   background-color: rgba(217, 217, 217, 1);
-  border: 2px solid black;
+
   border-radius: 15px;
   display: flex;
   flex-flow: column wrap;
@@ -163,10 +181,15 @@ main .parrafo-nosotros {
 }
 
 /* ==== Risotto ==== */
-.receta-risotto {
+.contenedor-receta,
+.risotto-principal,
+.risotto-ingredientes,
+.risotto-preparacion {
   margin: 25px;
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
 }
 main ul {
@@ -175,6 +198,18 @@ main ul {
 
 main ol {
   list-style: decimal;
+}
+
+@media (min-width: 768px) {
+  .contenedor-receta {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  main .img-risotto {
+    display: block;
+  }
 }
 
 /* ==== Formulario ==== */
