@@ -33,6 +33,10 @@ header nav ul {
   text-align: center;
 }
 
+.redes-sociales {
+  display: none;
+}
+
 @media (min-width: 768px) {
   header {
     flex-flow: row wrap;
@@ -42,6 +46,12 @@ header nav ul {
   header nav ul {
     flex-flow: row wrap;
     gap: 15px;
+  }
+
+  .redes-sociales {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
   }
 }
 
