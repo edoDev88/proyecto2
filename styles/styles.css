@@ -13,7 +13,6 @@ ul {
 
 h1,
 h2 {
-  margin: 25px;
   text-align: center;
 }
 
@@ -84,14 +83,11 @@ main {
 }
 
 .titulo-index {
-  max-width: 280px;
   font-size: 45px;
-  text-align: center;
 }
 
 .parrafo-index {
   margin: 25px 0;
-  max-width: 280px;
   text-align: center;
 }
 
@@ -212,7 +208,14 @@ main ol {
   }
 }
 
-/* ==== Formulario ==== */
+/* ==== Contacto ==== */
+.main-contacto {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .formulario {
   padding: 15px;
   display: flex;
@@ -237,6 +240,10 @@ input {
 }
 
 @media (min-width: 768px) {
+  .main-contacto {
+    flex-flow: row wrap;
+  }
+
   .formulario {
     flex-flow: row wrap;
     gap: 15px;
