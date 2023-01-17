@@ -1,3 +1,4 @@
+/* ==== Nosotros ==== */
 .nosotrosPrincipal {
   padding: 25px;
   display: flex;
@@ -7,14 +8,9 @@
   gap: 15px;
 }
 
-.nosotrosPrincipal__texto {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 35px;
-}
-
-.nosotrosPrincipal__parrafo {
-  text-align: justify;
+@media (min-width: 768px) {
+  .nosotrosPrincipal {
+    flex-flow: row nowrap;
+    padding: 25px 550px 0 550px;
+  }
 }

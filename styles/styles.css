@@ -15,6 +15,12 @@ a {
   text-decoration: none;
 }
 
+/* ==== Titulos ==== */
+.titulos {
+  padding: 25px 25px 0px 25px;
+  text-align: center;
+}
+
 /* ---- Componentes ---- */
 /* ==== Botones ==== */
 .boton {
@@ -46,6 +52,21 @@ header .redes-sociales {
   display: none;
 }
 
+@media (min-width: 768px) {
+  header {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  header nav ul {
+    flex-flow: row wrap;
+    gap: 15px;
+  }
+  header .redes-sociales {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+  }
+}
 /* ==== Footer ==== */
 footer {
   background-color: rgb(206, 43, 55);
@@ -58,6 +79,15 @@ footer span {
   color: rgb(245, 245, 245);
 }
 
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+}
 /* ---- Main ---- */
 /* ==== index ==== */
 .indexPrincipal {
@@ -86,6 +116,16 @@ footer span {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .indexPrincipal {
+    flex-flow: row;
+    gap: 150px;
+  }
+  .indexPrincipal__texto {
+    max-width: 550px;
+  }
+}
+/* ==== Nosotros ==== */
 .nosotrosPrincipal {
   padding: 25px;
   display: flex;
@@ -95,18 +135,12 @@ footer span {
   gap: 15px;
 }
 
-.nosotrosPrincipal__texto {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 35px;
+@media (min-width: 768px) {
+  .nosotrosPrincipal {
+    flex-flow: row nowrap;
+    padding: 25px 550px 0 550px;
+  }
 }
-
-.nosotrosPrincipal__parrafo {
-  text-align: justify;
-}
-
 /* ==== Recetas ==== */
 .contenedorTarjetas {
   padding: 25px;
@@ -128,10 +162,16 @@ footer span {
   gap: 15px;
 }
 
+@media (min-width: 768px) {
+  .contenedorTarjetas {
+    flex-flow: row wrap;
+  }
+}
 /* ==== Risotto ==== */
 .risottoPrincipal,
 .contenedorReceta,
-.contenedorReceta__ingredientes {
+.contenedorReceta__ingredientes,
+.contenedorReceta__preparacion {
   padding: 25px 25px 0 25px;
   display: flex;
   flex-flow: column wrap;
@@ -142,22 +182,27 @@ footer span {
 
 .contenedorReceta__preparacion {
   padding: 0px 25px 25px 25px;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
 }
 
-.contenedorReceta__ingredientes ul {
+.contenedorReceta__ingredientes ul, .contenedorReceta__preparacion ul {
   list-style: disc;
 }
 
-.contenedorReceta__ingredientes,
+.contenedorReceta__ingredientes, .contenedorReceta__preparacion,
 .contenedorReceta__preparacion ol {
   list-style: decimal;
 }
 
+@media (min-width: 768px) {
+  .contenedorReceta {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .img-risotto {
+    display: block;
+  }
+}
 /* ==== Contacto ==== */
 .contacto {
   padding: 25px;
@@ -167,7 +212,6 @@ footer span {
   justify-content: center;
 }
 .contacto__formulario {
-  padding: 25px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -190,6 +234,19 @@ input {
 
 .boton-form {
   margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .contacto {
+    flex-flow: row wrap;
+  }
+  .contacto__formulario {
+    flex-flow: row wrap;
+    gap: 15px;
+  }
+  .boton-form {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -10,14 +10,9 @@
   gap: 15px;
 }
 
-// Usar extend
 .contenedorReceta__preparacion {
+  @extend .contenedorReceta__ingredientes;
   padding: 0px 25px 25px 25px;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
 }
 
 .contenedorReceta__ingredientes ul {
@@ -27,4 +22,16 @@
 .contenedorReceta__ingredientes,
 .contenedorReceta__preparacion ol {
   list-style: decimal;
+}
+
+@media (min-width: 768px) {
+  .contenedorReceta {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .img-risotto {
+    display: block;
+  }
 }

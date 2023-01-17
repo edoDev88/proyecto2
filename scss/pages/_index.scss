@@ -25,3 +25,14 @@
 .indexPrincipal__parrafo {
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .indexPrincipal {
+    flex-flow: row;
+    gap: 150px;
+  }
+
+  .indexPrincipal__texto {
+    max-width: 550px;
+  }
+}
