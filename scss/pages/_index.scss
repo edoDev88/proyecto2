@@ -1,0 +1,27 @@
+/* ---- Main ---- */
+/* ==== index ==== */
+.indexPrincipal {
+  padding: 25px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.indexPrincipal__texto {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.indexPrincipal__titulo {
+  font-size: 45px;
+  text-align: center;
+}
+
+.indexPrincipal__parrafo {
+  text-align: center;
+}

@@ -1,0 +1,22 @@
+/* ==== Recetas ==== */
+.contenedorTarjetas {
+  padding: 25px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  &__tarjeta {
+    width: 270px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(217, 217, 217, 1);
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+}

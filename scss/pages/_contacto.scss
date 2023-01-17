@@ -1,0 +1,35 @@
+/* ==== Contacto ==== */
+.contacto {
+  padding: 25px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+
+  &__formulario {
+    padding: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: left;
+  }
+
+  &__datosPersonales {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  &__areaTexto {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
+
+label,
+input {
+  display: block;
+  padding: 5px;
+}
+
+.boton-form {
+  margin-top: 15px;
+}

@@ -1,0 +1,20 @@
+.nosotrosPrincipal {
+  padding: 25px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nosotrosPrincipal__texto {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.nosotrosPrincipal__parrafo {
+  text-align: justify;
+}

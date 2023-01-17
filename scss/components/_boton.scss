@@ -1,0 +1,13 @@
+/* ---- Componentes ---- */
+/* ==== Botones ==== */
+.boton {
+  background-color: antiquewhite;
+  color: black;
+  padding: 15px 37px;
+  border-radius: 50px;
+
+  &:hover {
+    background-color: rgba(10, 130, 6, 1);
+    color: white;
+  }
+}

@@ -1,0 +1,30 @@
+/* ==== Risotto ==== */
+.risottoPrincipal,
+.contenedorReceta,
+.contenedorReceta__ingredientes {
+  padding: 25px 25px 0 25px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+// Usar extend
+.contenedorReceta__preparacion {
+  padding: 0px 25px 25px 25px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.contenedorReceta__ingredientes ul {
+  list-style: disc;
+}
+
+.contenedorReceta__ingredientes,
+.contenedorReceta__preparacion ol {
+  list-style: decimal;
+}

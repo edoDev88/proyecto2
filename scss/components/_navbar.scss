@@ -1,0 +1,21 @@
+/* ==== Navegacion ==== */
+header {
+  background-color: rgba(10, 130, 6, 1);
+  padding: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  nav {
+    ul {
+      display: flex;
+      flex-flow: column wrap;
+      text-align: center;
+    }
+  }
+
+  .redes-sociales {
+    display: none;
+  }
+}

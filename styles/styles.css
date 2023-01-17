@@ -1,4 +1,4 @@
-/* ---- Reseteo de CSS ---- */
+/* Reseteo de CSS */
 * {
   margin: 0;
   padding: 0;
@@ -11,61 +11,56 @@ ul {
   list-style: none;
 }
 
-h1,
-h2 {
-  text-align: center;
-}
-
 a {
   text-decoration: none;
-  color: rgba(245, 245, 245, 1);
-  font-weight: 500;
 }
 
-/* ---- Header ---- */
+/* ---- Componentes ---- */
+/* ==== Botones ==== */
+.boton {
+  background-color: antiquewhite;
+  color: black;
+  padding: 15px 37px;
+  border-radius: 50px;
+}
+.boton:hover {
+  background-color: rgb(10, 130, 6);
+  color: white;
+}
+
+/* ==== Navegacion ==== */
 header {
-  background-color: rgba(10, 130, 6, 1);
+  background-color: rgb(10, 130, 6);
   padding: 15px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
-
 header nav ul {
   display: flex;
   flex-flow: column wrap;
   text-align: center;
 }
-
-.redes-sociales {
+header .redes-sociales {
   display: none;
 }
 
-@media (min-width: 768px) {
-  header {
-    flex-flow: row wrap;
-    justify-content: space-between;
-  }
-
-  header nav ul {
-    flex-flow: row wrap;
-    gap: 15px;
-  }
-
-  .redes-sociales {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 20px;
-  }
+/* ==== Footer ==== */
+footer {
+  background-color: rgb(206, 43, 55);
+  text-align: center;
+  padding: 15px;
+}
+footer span {
+  display: block;
+  font-weight: 600;
+  color: rgb(245, 245, 245);
 }
 
 /* ---- Main ---- */
-main {
-  margin: 25px;
-}
 /* ==== index ==== */
-.index-principal {
+.indexPrincipal {
   padding: 25px;
   display: flex;
   flex-flow: column wrap;
@@ -74,157 +69,115 @@ main {
   gap: 15px;
 }
 
-.index-principal-texto {
+.indexPrincipal__texto {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 35px;
 }
 
-.titulo-index {
+.indexPrincipal__titulo {
   font-size: 45px;
-}
-
-.parrafo-index {
-  margin: 25px 0;
   text-align: center;
 }
 
-.boton-index {
-  display: block;
-  background-color: antiquewhite;
-  color: black;
-  width: 200px;
-  height: 50px;
-  padding: 15px;
-  border-radius: 50px;
-  border: 0px solid black;
+.indexPrincipal__parrafo {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .index-principal {
-    flex-flow: row;
-    gap: 150px;
-  }
-
-  .titulo-index,
-  .parrafo-index {
-    max-width: 550px;
-  }
-}
-
-/* ==== Nosotros ==== */
-.parrafo-nosotros {
-  margin: 25px 0;
-  max-width: 280px;
-  text-align: justify;
-}
-
-.main-nosotros-principal {
+.nosotrosPrincipal {
+  padding: 25px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 15px;
 }
 
-@media (min-width: 768px) {
-  .main-nosotros-principal {
-    flex-flow: row wrap;
-  }
+.nosotrosPrincipal__texto {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.nosotrosPrincipal__parrafo {
+  text-align: justify;
 }
 
 /* ==== Recetas ==== */
 .contenedorTarjetas {
+  padding: 25px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   gap: 15px;
 }
-
-.tarjeta {
+.contenedorTarjetas__tarjeta {
   width: 270px;
   padding: 15px;
-  background-color: rgba(217, 217, 217, 1);
-
   border-radius: 15px;
+  background-color: rgb(217, 217, 217);
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   gap: 15px;
-}
-
-.boton_tarjeta {
-  background-color: darkkhaki;
-  display: block;
-  width: 100px;
-  height: 25px;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .contenedorTarjetas {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-  }
 }
 
 /* ==== Risotto ==== */
-.contenedor-receta,
-.risotto-principal,
-.risotto-ingredientes,
-.risotto-preparacion {
-  margin: 25px;
+.risottoPrincipal,
+.contenedorReceta,
+.contenedorReceta__ingredientes {
+  padding: 25px 25px 0 25px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   gap: 15px;
 }
-main ul {
+
+.contenedorReceta__preparacion {
+  padding: 0px 25px 25px 25px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.contenedorReceta__ingredientes ul {
   list-style: disc;
 }
 
-main ol {
+.contenedorReceta__ingredientes,
+.contenedorReceta__preparacion ol {
   list-style: decimal;
 }
 
-@media (min-width: 768px) {
-  .contenedor-receta {
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  main .img-risotto {
-    display: block;
-  }
-}
-
 /* ==== Contacto ==== */
-.main-contacto {
+.contacto {
+  padding: 25px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
 }
-
-.formulario {
-  padding: 15px;
+.contacto__formulario {
+  padding: 25px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: left;
 }
-
-.datosPersonales {
+.contacto__datosPersonales {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.contacto__areaTexto {
   display: flex;
   flex-flow: column nowrap;
 }
@@ -239,38 +192,4 @@ input {
   margin-top: 15px;
 }
 
-@media (min-width: 768px) {
-  .main-contacto {
-    flex-flow: row wrap;
-  }
-
-  .formulario {
-    flex-flow: row wrap;
-    gap: 15px;
-  }
-
-  .boton-form {
-    display: block;
-  }
-}
-/* ---- Footer ---- */
-footer {
-  background-color: rgba(206, 43, 55, 1);
-  text-align: center;
-  padding: 15px;
-}
-footer span {
-  display: block;
-  font-weight: 600;
-  color: rgba(245, 245, 245, 1);
-}
-
-@media (min-width: 768px) {
-  footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: left;
-  }
-}
+/*# sourceMappingURL=styles.css.map */

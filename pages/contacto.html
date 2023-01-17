@@ -27,10 +27,13 @@
     </header>
 
     <main>
-      <h1>Contacto</h1>
-      <div class="main-contacto">
-        <form action="" class="formulario">
-          <div class="datosPersonales">
+      <div class="contacto">
+        <div class="contacto__texto">
+          <h1>Contacto</h1>
+        </div>
+
+        <form action="" class="contacto__formulario">
+          <div class="contacto__datosPersonales">
             <label for="Nombre">Nombre</label>
             <input type="text" id="Nombre" />
             <label for="apellido">Apellido</label>
@@ -38,7 +41,8 @@
             <label for="email">E-Mail</label>
             <input type="email" id="email" />
           </div>
-          <div class="areaTexto">
+
+          <div class="contacto__areaTexto">
             <label for="mensaje">Mensaje</label>
             <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
             <input type="submit" value="Enviar" class="boton-form" />
