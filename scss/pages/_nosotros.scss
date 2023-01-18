@@ -11,6 +11,8 @@
 @media (min-width: 768px) {
   .nosotrosPrincipal {
     flex-flow: row nowrap;
-    padding: 25px 550px 0 550px;
+  }
+  .nosotrosPrincipal p {
+    width: 700px;
   }
 }

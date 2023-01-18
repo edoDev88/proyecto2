@@ -12,6 +12,14 @@ header {
       display: flex;
       flex-flow: column wrap;
       text-align: center;
+
+      li a {
+        font-weight: 500;
+        color: white;
+        &:hover {
+          color: rgba(206, 43, 55, 1);
+        }
+      }
     }
   }
 
