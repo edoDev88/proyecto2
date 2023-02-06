@@ -34,6 +34,10 @@ a {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 /* ==== Navegacion ==== */
 header {
   background-color: rgb(10, 130, 6);
@@ -227,6 +231,7 @@ footer span {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  gap: 25px;
 }
 .contacto__formulario {
   display: flex;
