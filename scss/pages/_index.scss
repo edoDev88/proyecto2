@@ -30,6 +30,7 @@
   .indexPrincipal {
     flex-flow: row;
     gap: 150px;
+    height: calc(100vh - 74px);
   }
 
   .indexPrincipal__texto {
