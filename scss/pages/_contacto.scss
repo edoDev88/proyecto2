@@ -36,6 +36,7 @@ input {
 @media (min-width: 768px) {
   .contacto {
     flex-flow: row wrap;
+    height: calc(100vh - 214px);
 
     &__formulario {
       flex-flow: row wrap;

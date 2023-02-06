@@ -24,5 +24,6 @@
 @media (min-width: 768px) {
   .contenedorTarjetas {
     flex-flow: row wrap;
+    height: calc(100vh - 214px);
   }
 }

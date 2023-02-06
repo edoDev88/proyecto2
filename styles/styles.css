@@ -127,7 +127,7 @@ footer span {
   .indexPrincipal {
     flex-flow: row;
     gap: 150px;
-    height: calc(100vh - 74px);
+    height: calc(100vh - 146px);
   }
   .indexPrincipal__texto {
     max-width: 550px;
@@ -141,6 +141,12 @@ footer span {
   align-items: center;
   justify-content: center;
   gap: 15px;
+}
+
+.nosotrosPrincipal__texto {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
 }
 
 @media (min-width: 768px) {
@@ -175,6 +181,7 @@ footer span {
 @media (min-width: 768px) {
   .contenedorTarjetas {
     flex-flow: row wrap;
+    height: calc(100vh - 214px);
   }
 }
 /* ==== Risotto ==== */
@@ -249,6 +256,7 @@ input {
 @media (min-width: 768px) {
   .contacto {
     flex-flow: row wrap;
+    height: calc(100vh - 214px);
   }
   .contacto__formulario {
     flex-flow: row wrap;

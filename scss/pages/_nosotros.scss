@@ -8,6 +8,12 @@
   gap: 15px;
 }
 
+.nosotrosPrincipal__texto {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+}
+
 @media (min-width: 768px) {
   .nosotrosPrincipal {
     flex-flow: row nowrap;
